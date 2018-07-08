@@ -1,5 +1,5 @@
 <template>
-        <div @click="$bus.$emit('delete-quote', quote)" class="card text-dark bg-light quote">
+        <div @click="$bus.$emit('delete-quote', quote)" class="card bg-light quote">
             <div class="card-header">Quote #{{ index + 1}}</div>
             <div class="card-body">
                 <div class="card-text">
@@ -17,8 +17,9 @@
 
 <style>
     .card-text {
-        font-family: 'Arizonia', cursive;
+        font-family: 'Pacifico', cursive;
         font-size: 24px;
+        color: #a3a3a3 !important;
     }
 
     .quote {
